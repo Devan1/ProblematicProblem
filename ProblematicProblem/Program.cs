@@ -6,7 +6,6 @@ namespace ProblematicProblem
 {
     public class Program
     {
-        //Random rng;
 
         static bool cont = true;
         static List<string> activities = new List<string>() { "Movies", "Paintball", "Bowling", "Lazer Tag", "LAN Party", "Hiking", "Axe Throwing", "Wine Tasting" };
@@ -18,7 +17,6 @@ namespace ProblematicProblem
             Console.Write("Hello, welcome to the random activity generator! \nWould you like to generate a random activity? true/false: ");
 
             bool cont = bool.Parse(Console.ReadLine());
-            //cont = bool.Parse(Console.ReadLine());
             Console.WriteLine();
             Console.Write("We are going to need your information first! What is your name? ");
             string userName = Console.ReadLine();
@@ -84,8 +82,6 @@ namespace ProblematicProblem
                 Console.WriteLine($"Oh no! Looks like you are too young to do {randomActivity}");
                 Console.WriteLine("Pick something else!");
                 activities.Remove(randomActivity);
-                //string randomNumber = rng.Next(activities.Count);
-                //string randomActivity = activities[randomNumber];
             }
 
             Console.Write($"Ah got it! {userName}, your random activity is: {randomActivity}! Is this ok or do you want to grab another activity? true/false: ");
